@@ -1,10 +1,11 @@
 <?php
     $server     = 'localhost';
-    $username   = 'root';
+    $user       = 'root';
     $password   = '';
     $dbtiketkonser   = 'dbtiketkonser';
 
     $koneksi         = mysqli_connect($server, $username, $password, $dbtiketkonser );
+    $db         = mysqli_connect($server, $user, $password, $database );
 
     if ($koneksi) {
         echo "Berhasil Terhubung dengan Database";

@@ -80,9 +80,9 @@ if(isset($_POST["login"])){
                             <center><h2>Login</h2></center>
                             <hr>
                                 
-<?php if (isset($error)) :?>
-    <p style="color:red ; font-style: italic;">username/password salah</p>
-<?php endif;?> 
+                                <?php if (isset($error)) :?>
+                                    <p style="color:red ; font-style: italic;">username/password salah</p>
+                                <?php endif;?> 
 
                                 <form id="username" name="username" data-name="Username Form" method="POST" action = ""
                                     class="signup-form" aria-label="Username Form">
