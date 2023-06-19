@@ -2,11 +2,11 @@
     $server     = 'localhost';
     $username   = 'root';
     $password   = '';
-    $database   = 'dbtiketkonser';
+    $dbtiketkonser   = 'dbtiketkonser';
 
-    $db         = mysqli_connect($server, $username, $password, $database );
+    $koneksi         = mysqli_connect($server, $username, $password, $dbtiketkonser );
 
-    if ($db) {
+    if ($koneksi) {
         echo "Berhasil Terhubung dengan Database";
     } else {
        die('Gagal Terhubung dengan Database!<br>'. mysqli_connect_error());
