@@ -47,15 +47,15 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner justify-content-center">
+  <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/vir1.png" class="d-block w-100" alt="...">
+      <img src="img/vir1.png" class="d-block w-100" alt="">
     </div>
     <div class="carousel-item">
-      <img src="img/yura1.png" class="d-block w-100" alt="...">
+      <img src="img/yura1.png" class="d-block w-100" alt="">
     </div>
     <div class="carousel-item">
-      <img src="img/hi1.png" class="d-block w-100" alt="...">
+      <img src="img/hi1.png" class="d-block w-100" alt="">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
