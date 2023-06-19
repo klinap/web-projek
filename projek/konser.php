@@ -39,6 +39,7 @@
         </div>
         </div>
     </nav>  
+    
   <!-- Gambar Slide -->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -46,7 +47,7 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <div class="carousel-inner">
+  <div class="carousel-inner justify-content-center">
     <div class="carousel-item active">
       <img src="img/vir1.png" class="d-block w-100" alt="...">
     </div>
@@ -67,26 +68,36 @@
   </button>
 </div>
 
-
-<div class="tengah">
-      <div class="kolom">
-        <h2>Line Up</h2>
-        <p>Inilah beberapa artis Korea yang akan menemani kamu dalam konser Soundreanaline Festival. Diantaranya yaitu:</p>
+<br><br>
+<!-- Deskripsi Line Up -->
+<center><h1>Line Up</h1></center>
+<center><h3>Artis yang sangat kalian tunggu tunggu pada konser kali ini</h3></center>
+<div class="container">
+    <div class="row">
+      <div class="col-12 my-5 justify-content-center">
+        <h1 class="about fw-bold">
+        </h1>
       </div>
-      <br>
-      <div class="lineup-list">
-        <div class="kartu-lineup">
-      <img src="https://lastfm.freetls.fastly.net/i/u/770x0/f53bf0af41f6baeca6a4aa8b5c4a9aae.jpg"/>
-      <p>EXO</p>
+      <div class="col-4">
+        <h4 class="fw-bold text-black">VIERRA</h4>
+        <img src="img/vir2.png" alt="profile" width="120px" class="rounded-circle img-profile">
+        <p>Vierratale merupakan sebuah grup musik pop rock asal Jakarta, Indonesia yang dibentuk pada tanggal 3 November 2008. Band ini beranggotakan 3 orang yaitu Kevin Aprilio, Widy Soediro Nichlany, dan Raka Cyril Damar. Genre musik Vierra dapat dikategorikan sebagai powerpop dan pop rock.</p>
       </div>
-      <div class="kartu-lineup">
-      <img src="https://cdn06.pramborsfm.com/storage/app/media/Prambors/Editorial/BTS-20210512070726.jpg?tr=w-800"/>
-      <p>BTS</p>
+      <div class="col-4">
+        <h4 class="fw-bold text-black">NOT SO KOPLO</h4>
+        <img src="img/fk2.png" alt="profile" width="120px" class="rounded-circle img-profile">
+        <p>Not So Koplo berdiri berawal dari ketertarikan anak muda terhadap musik dangdut koplo. Suasana "ancor" saat menyanyikan lagu dangdut koplo memiliki rasa tersendiri. Apalagi ketika di kombinasikan dengan lagu-lagu masa kini.
+Not So Koplo terdiri dari dua orang muda sebagai "pemandu lagu" yang mengkurasi lagu-lagu yang hype saat ini dipadukan dengan aliran musik "dangdut koplo" dengan sentuhan musik modern.
+Melihat minat yang tinggi terhadap musik dangdut, Not So Koplo memiliki tujuan untuk melestarikan Budaya Indonesia dengan membuat lagu-lagu saat ini memiliki daya tarik yang baru ketika dipadukan dengan "dangdut koplo".</p>
       </div>
-      <div class="kartu-lineup">
-      <img src="https://cdn06.pramborsfm.com/storage/app/media/Prambors/Editorial/NCT%20127-20210916135833.jpg?tr=w-800"/>
-      <p>NCT 127</p>
+      <div class="col-4">
+        <!-- <div class="ms-4"> -->
+          <h4 class="fw-bold text-black">HIVI!</h4>
+          <img src="img/hi2.png" alt="profile" width="120px" class="rounded-circle img-profile">
+          <p>HIVI! merupakan sebuah grup musik pop Indonesia yang dibentuk di Jakarta pada tahun 2009. Grup musik ini beranggotakan Neida Aleida, Ilham Aditama, Febrian Nindyo Purbowiseso dan Ezra Mandira. Grup musik ini bergenre pop.</p>
+        </div>
       </div>
+    </div>
 
 <div style="height: 900px;" ></div>
 
