@@ -66,6 +66,28 @@
     <span class="sr-only">Next</span>
   </button>
 </div>
+
+
+<div class="tengah">
+      <div class="kolom">
+        <h2>Line Up</h2>
+        <p>Inilah beberapa artis Korea yang akan menemani kamu dalam konser Soundreanaline Festival. Diantaranya yaitu:</p>
+      </div>
+      <br>
+      <div class="lineup-list">
+        <div class="kartu-lineup">
+      <img src="https://lastfm.freetls.fastly.net/i/u/770x0/f53bf0af41f6baeca6a4aa8b5c4a9aae.jpg"/>
+      <p>EXO</p>
+      </div>
+      <div class="kartu-lineup">
+      <img src="https://cdn06.pramborsfm.com/storage/app/media/Prambors/Editorial/BTS-20210512070726.jpg?tr=w-800"/>
+      <p>BTS</p>
+      </div>
+      <div class="kartu-lineup">
+      <img src="https://cdn06.pramborsfm.com/storage/app/media/Prambors/Editorial/NCT%20127-20210916135833.jpg?tr=w-800"/>
+      <p>NCT 127</p>
+      </div>
+
 <div style="height: 900px;" ></div>
 
   <!-- Javascript Bootstrap -->

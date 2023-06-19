@@ -1,11 +1,15 @@
-<?php 
-$host = "localhost";
-$user = "root";
-$pass = ""; //karena kita menggunakan xampp biasanya pass kosong
-$db   = "projek";
+<?php
+    $server     = 'localhost';
+    $user       = 'root';
+    $password   = '';
+    $database   = 'dbtiketkonser';
 
-    $koneksi = mysqli_connect($host, $user, $pass, $db); //untuk koneksi kita menggunakan fungsi dari mysql. lalu kita masukan parameter untuk melakukan koneksi ke database
-    if(!$koneksi){ //cek koneksi
-    die("Gagal Koneksi");
+    $db         = mysqli_connect($server, $user, $password, $database );
+
+    if ($db) {
+        echo "Berhasil Terhubung dengan Database";
+    } else {
+       die('Gagal Terhubung dengan Database!<br>'. mysqli_connect_error());
     }
+    
 ?>
