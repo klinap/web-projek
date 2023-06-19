@@ -52,10 +52,10 @@
       <img src="img/vir1.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img/vir1.png" class="d-block w-100" alt="...">
+      <img src="img/yura1.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img/vir1.png" class="d-block w-100" alt="...">
+      <img src="img/hi1.png" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
@@ -85,10 +85,8 @@
       </div>
       <div class="col-4">
         <h4 class="fw-bold text-black">NOT SO KOPLO</h4>
-        <img src="img/fk2.png" alt="profile" width="120px" class="rounded-circle img-profile">
-        <p>Not So Koplo berdiri berawal dari ketertarikan anak muda terhadap musik dangdut koplo. Suasana "ancor" saat menyanyikan lagu dangdut koplo memiliki rasa tersendiri. Apalagi ketika di kombinasikan dengan lagu-lagu masa kini.
-Not So Koplo terdiri dari dua orang muda sebagai "pemandu lagu" yang mengkurasi lagu-lagu yang hype saat ini dipadukan dengan aliran musik "dangdut koplo" dengan sentuhan musik modern.
-Melihat minat yang tinggi terhadap musik dangdut, Not So Koplo memiliki tujuan untuk melestarikan Budaya Indonesia dengan membuat lagu-lagu saat ini memiliki daya tarik yang baru ketika dipadukan dengan "dangdut koplo".</p>
+        <img src="img/yura2.png" alt="profile" width="120px" class="rounded-circle img-profile">
+        <p>Yunita Rachman atau yang lebih dikenal dengan Yura Yunita adalah seorang penyanyi-penulis lagu Indonesia berdarah Sunda.</p>
       </div>
       <div class="col-4">
         <!-- <div class="ms-4"> -->
