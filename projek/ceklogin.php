@@ -11,7 +11,7 @@ $data = mysqli_query($koneksi,"SELECT * FROM tblogin WHERE username = '$username
 $result = mysqli_num_rows($data);
 
 if ($result > 0){
-    header ("Location: konser.php");
+    header ("Location: dashboard.php");
 }
 else{
     header ("Location:login.php?pesan=gagal");
