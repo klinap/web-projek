@@ -1,4 +1,3 @@
-
 <html data-wf-domain="pepper-webflow-ecommerce-template.webflow.io" data-wf-page="635f628bf1c7258a2e84e36c"
     data-wf-site="635f628bf1c725f2f584e359" class=" w-mod-js w-mod-ix">
 
@@ -22,6 +21,8 @@
     </script>
     <link href="https://assets.website-files.com/635f628bf1c725f2f584e359/635f628bf1c7251fe084e374_fav.svg"
         rel="shortcut icon" type="image/x-icon">
+    <link href="https://assets.website-files.com/635f628bf1c725f2f584e359/635f628bf1c725ffc284e375_mac.svg"
+        rel="apple-touch-icon">
     <style>
         {
             -webkit-font-smoothing: antialiased;
@@ -43,8 +44,6 @@
 </head>
 
 <body class="bg-dark" style="background-image: url(https://i.pinimg.com/564x/cf/ba/5d/cfba5d78a3f98961465009102f9f9664.jpg);">
-    <!-- <img src="https://i.pinimg.com/564x/cf/ba/5d/cfba5d78a3f98961465009102f9f9664.jpg" alt="" style=""> -->
-
     <div class="page-wrapper overflow-hidden">
         <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
             role="banner" class="navbar w-nav">
@@ -54,19 +53,25 @@
             <div class="signup-main-section">
                 <div class="wrapper-1080px">
                     <div class="sign-main-wrapper">
-                        <div class="signup-form-main-block" >
+                        <div class="signup-form-main-block">
                             <div class="signup-form-block w-form">
-                            <center><h2>Login</h2></center>
+                            <center><h4>Register</h4></center>
                             <hr>
-                                <form id="email-form" name="email-form" data-name="Email Form" method="post" action = "fungsilogin.php"
+                                <form id="email-form" name="email-form" data-name="Email Form" method="get"
                                     class="signup-form" aria-label="Email Form">
-                                    <div class="form-field-block _100">
-                                        <label for="email" class="text-label dark">Username*</label>
-                                        <input type="text" class="form-input alter w-input" maxlength="256" name="username" placeholder="Enter your username" required>
+                                    <div class="form-field-block _100"><label for="email"
+                                            class="text-label dark">Nama Lengkap*</label><input type="text"
+                                            class="form-input alter w-input" maxlength="60" name="namaLengkap"
+                                            placeholder="Enter your username" required>
+                                    </div>
+                                    <div class="form-field-block _100"><label for="email"
+                                            class="text-label dark">Username*</label><input type="text"
+                                            class="form-input alter w-input" maxlength="100" name="username"
+                                            placeholder="Enter your username" required>
                                     </div>
                                     <div class="form-field-block _100"><label for="Password"
                                             class="text-label dark">Password*</label><input type="password"
-                                            class="form-input alter w-input" maxlength="256" name="password"
+                                            class="form-input alter w-input" maxlength="100" name="Password"
                                             data-name="Password" placeholder="Enter your password" id="Password"
                                             required>
                                     </div><input type="submit" value="Continue" data-wait="Please wait..."
@@ -74,8 +79,8 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="signup-text">Don't have an account? <a href="register.php" class="signup-link">Sign
-                                up</a></div>
+                        <div class="signup-text">Have an account? <a href="index.php" class="signup-link">Sign
+                                In</a></div>
                     </div>
                 </div>
             </div>
