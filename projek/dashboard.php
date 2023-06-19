@@ -21,46 +21,46 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#jadwal">Jadwal</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#mediapartner">Media Partner</a>
-            </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white" href="#jadwal">Jadwal</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white" href="#mediapartner">Media Partner</a>
+              </li>
             </ul>
         </div>
         </div>
     </nav>  
     
   <!-- Gambar Slide -->
-  <div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
+  </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/yura1.png" class="d-block w-100" alt="...">
+      <img class="d-block w-100" src="img/yura1.png" alt="First slide">
     </div>
-    <div class="carousel-item">
-      <img src="img/vir1.png" class="d-block w-100" alt="...">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/hi1.png" alt="Second slide">
     </div>
-    <div class="carousel-item">
-      <img src="img/hi1.png" class="d-block w-100" alt="...">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/vir1.png" alt="Third slide">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
 <br><br>
@@ -84,7 +84,6 @@
         <p>Yunita Rachman atau yang lebih dikenal dengan Yura Yunita adalah seorang penyanyi-penulis lagu Indonesia berdarah Sunda.</p>
       </div>
       <div class="col-4">
-        <!-- <div class="ms-4"> -->
           <h4 class="fw-bold text-black">HIVI!</h4>
           <img src="img/hi2.png" alt="profile" width="120px" class="rounded-circle img-profile">
           <p>HIVI! merupakan sebuah grup musik pop Indonesia yang dibentuk di Jakarta pada tahun 2009. Grup musik ini beranggotakan Neida Aleida, Ilham Aditama, Febrian Nindyo Purbowiseso dan Ezra Mandira. Grup musik ini bergenre pop.</p>
