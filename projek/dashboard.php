@@ -10,11 +10,6 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="fontawesome/css/all.css">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,30 +36,30 @@
     </nav>  
     
   <!-- Gambar Slide -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
+  <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/vir1.png" class="d-block w-100" alt="">
+      <img src="img/yura1.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img/yura1.png" class="d-block w-100" alt="">
+      <img src="img/vir1.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img/hi1.png" class="d-block w-100" alt="">
+      <img src="img/hi1.png" class="d-block w-100" alt="...">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
+    <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
+    <span class="visually-hidden">Next</span>
   </button>
 </div>
 
@@ -84,7 +79,7 @@
         <p>Vierratale merupakan sebuah grup musik pop rock asal Jakarta, Indonesia yang dibentuk pada tanggal 3 November 2008. Band ini beranggotakan 3 orang yaitu Kevin Aprilio, Widy Soediro Nichlany, dan Raka Cyril Damar. Genre musik Vierra dapat dikategorikan sebagai powerpop dan pop rock.</p>
       </div>
       <div class="col-4">
-        <h4 class="fw-bold text-black">NOT SO KOPLO</h4>
+        <h4 class="fw-bold text-black">YURA YUNITA</h4>
         <img src="img/yura2.png" alt="profile" width="120px" class="rounded-circle img-profile">
         <p>Yunita Rachman atau yang lebih dikenal dengan Yura Yunita adalah seorang penyanyi-penulis lagu Indonesia berdarah Sunda.</p>
       </div>
@@ -97,6 +92,8 @@
       </div>
     </div>
 
+
+
 <div style="height: 900px;" ></div>
 
   <!-- Javascript Bootstrap -->
@@ -106,9 +103,9 @@
   <script>
     AOS.init();
   </script>
-</body>
-</html>
-<link rel="stylesheet"
+  <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
 integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 crossorigin="anonymous">
+</body>
+</html>
