@@ -10,11 +10,6 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="fontawesome/css/all.css">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,46 +21,46 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#jadwal">Jadwal</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-white" href="#mediapartner">Media Partner</a>
-            </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white" href="#jadwal">Jadwal</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link text-white" href="#mediapartner">Media Partner</a>
+              </li>
             </ul>
         </div>
         </div>
     </nav>  
     
   <!-- Gambar Slide -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
   </ol>
-  <div class="carousel-inner justify-content-center">
+  <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/vir1.png" class="d-block w-100" alt="...">
+      <img class="d-block w-100" src="img/yura1.png" alt="First slide">
     </div>
-    <div class="carousel-item">
-      <img src="img/vir1.png" class="d-block w-100" alt="...">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/hi1.png" alt="Second slide">
     </div>
-    <div class="carousel-item">
-      <img src="img/vir1.png" class="d-block w-100" alt="...">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/vir1.png" alt="Third slide">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
-  </button>
+  </a>
 </div>
 
 <br><br>
@@ -84,20 +79,19 @@
         <p>Vierratale merupakan sebuah grup musik pop rock asal Jakarta, Indonesia yang dibentuk pada tanggal 3 November 2008. Band ini beranggotakan 3 orang yaitu Kevin Aprilio, Widy Soediro Nichlany, dan Raka Cyril Damar. Genre musik Vierra dapat dikategorikan sebagai powerpop dan pop rock.</p>
       </div>
       <div class="col-4">
-        <h4 class="fw-bold text-black">NOT SO KOPLO</h4>
-        <img src="img/fk2.png" alt="profile" width="120px" class="rounded-circle img-profile">
-        <p>Not So Koplo berdiri berawal dari ketertarikan anak muda terhadap musik dangdut koplo. Suasana "ancor" saat menyanyikan lagu dangdut koplo memiliki rasa tersendiri. Apalagi ketika di kombinasikan dengan lagu-lagu masa kini.
-Not So Koplo terdiri dari dua orang muda sebagai "pemandu lagu" yang mengkurasi lagu-lagu yang hype saat ini dipadukan dengan aliran musik "dangdut koplo" dengan sentuhan musik modern.
-Melihat minat yang tinggi terhadap musik dangdut, Not So Koplo memiliki tujuan untuk melestarikan Budaya Indonesia dengan membuat lagu-lagu saat ini memiliki daya tarik yang baru ketika dipadukan dengan "dangdut koplo".</p>
+        <h4 class="fw-bold text-black">YURA YUNITA</h4>
+        <img src="img/yura2.png" alt="profile" width="120px" class="rounded-circle img-profile">
+        <p>Yunita Rachman atau yang lebih dikenal dengan Yura Yunita adalah seorang penyanyi-penulis lagu Indonesia berdarah Sunda.</p>
       </div>
       <div class="col-4">
-        <!-- <div class="ms-4"> -->
           <h4 class="fw-bold text-black">HIVI!</h4>
           <img src="img/hi2.png" alt="profile" width="120px" class="rounded-circle img-profile">
           <p>HIVI! merupakan sebuah grup musik pop Indonesia yang dibentuk di Jakarta pada tahun 2009. Grup musik ini beranggotakan Neida Aleida, Ilham Aditama, Febrian Nindyo Purbowiseso dan Ezra Mandira. Grup musik ini bergenre pop.</p>
         </div>
       </div>
     </div>
+
+
 
 <div style="height: 900px;" ></div>
 
@@ -108,9 +102,9 @@ Melihat minat yang tinggi terhadap musik dangdut, Not So Koplo memiliki tujuan u
   <script>
     AOS.init();
   </script>
-</body>
-</html>
-<link rel="stylesheet"
+  <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
 integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
 crossorigin="anonymous">
+</body>
+</html>
