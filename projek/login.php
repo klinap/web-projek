@@ -1,24 +1,3 @@
-<?php
-// Mengecek apakah form login telah disubmit
-if(isset($_POST["login"])){
-    include "koneksi.php";
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-    $result = mysqli_query($koneksi, "SELECT * FROM tblogin WHERE username = '$username'");
-
-     //cek username 
-     if (mysqli_num_rows($result)===1){
-
-        //cek password
-        $row=mysqli_fetch_assoc($result);
-        if (password_verify($password, $row["password"])){
-            header("Location : dashboard.php");
-            exit;
-        }
-     }
-     $error = true;
-}
-?>
 <html data-wf-domain="pepper-webflow-ecommerce-template.webflow.io" data-wf-page="635f628bf1c7258a2e84e36c"
     data-wf-site="635f628bf1c725f2f584e359" class=" w-mod-js w-mod-ix">
 
@@ -62,9 +41,16 @@ if(isset($_POST["login"])){
     </script>
 </head>
 
-<body class="bg-dark" style="background-image: url(https://i.pinimg.com/564x/cf/ba/5d/cfba5d78a3f98961465009102f9f9664.jpg);">
+<body class="bg-dark"
+    style="background-image: url(https://i.pinimg.com/564x/cf/ba/5d/cfba5d78a3f98961465009102f9f9664.jpg);">
     <!-- <img src="https://i.pinimg.com/564x/cf/ba/5d/cfba5d78a3f98961465009102f9f9664.jpg" alt="" style=""> -->
-
+    <?php
+if(isset($_GET['pesan'])){
+    if($_GET['pesan']=="gagal"){
+        echo "<script> alert('Username dan Password tidak sesuai !')</script>";
+    }
+}
+?>
 
     <div class="page-wrapper overflow-hidden">
         <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
@@ -75,28 +61,24 @@ if(isset($_POST["login"])){
             <div class="signup-main-section">
                 <div class="wrapper-1080px">
                     <div class="sign-main-wrapper">
-                        <div class="signup-form-main-block" >
+                        <div class="signup-form-main-block">
                             <div class="signup-form-block w-form">
-                            <center><h2>Login</h2></center>
-                            <hr>
-                                
-                                <?php if (isset($error)) :?>
-                                    <p style="color:red ; font-style: italic;">username/password salah</p>
-                                <?php endif;?> 
-
-                                <form id="username" name="username" data-name="Username Form" method="POST" action = ""
+                                <center>
+                                    <h2>Login</h2>
+                                </center>
+                                <hr>
+                                <form id="username" name="username" method="POST" action="ceklogin.php"
                                     class="signup-form" aria-label="Username Form">
                                     <div class="form-field-block _100">
-                                        <label for="email" class="text-label dark">Username*</label>
-                                        <input type="text" class="form-input alter w-input" maxlength="256" name="username" placeholder="Enter your username" required>
+                                        <label class="text-label dark">Username*</label>
+                                        <input type="text" class="form-input alter w-input" maxlength="256"
+                                            name="username" placeholder="Enter your username" required>
                                     </div>
-                                    <div class="form-field-block _100"><label for="Password"
+                                    <div class="form-field-block _100"><label
                                             class="text-label dark">Password*</label><input type="password"
                                             class="form-input alter w-input" maxlength="256" name="password"
-                                            data-name="Password" placeholder="Enter your password" id="Password"
-                                            required>
-                                    </div><input type="submit" value="Continue" name="login"
-                                        class="main-button w-button">
+                                            placeholder="Enter your password" id="password" required>
+                                    </div><input type="submit" value="Continue" class="main-button w-button">
                                 </form>
                             </div>
                         </div>

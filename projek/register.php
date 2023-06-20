@@ -44,6 +44,13 @@
 </head>
 
 <body class="bg-dark" style="background-image: url(https://i.pinimg.com/564x/cf/ba/5d/cfba5d78a3f98961465009102f9f9664.jpg);">
+<?php
+if(isset($_GET['pesan'])){
+    if($_GET['pesan']=="Terdaftar"){
+        echo "<script> alert('Berhasil mendaftar, silahkan kembali ke halaman Login!')</script>";
+    }
+}
+?>
     <div class="page-wrapper overflow-hidden">
         <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
             role="banner" class="navbar w-nav">
@@ -57,7 +64,7 @@
                             <div class="signup-form-block w-form">
                             <center><h4>Register</h4></center>
                             <hr>
-                                <form id="email-form" name="email-form" data-name="Email Form" method="get"
+                                <form id="email-form" name="email-form" data-name="Email Form" method="POST" action ="prosesregist.php"
                                     class="signup-form" aria-label="Email Form">
                                     <div class="form-field-block _100"><label for="email"
                                             class="text-label dark">Nama Lengkap*</label><input type="text"
@@ -71,8 +78,8 @@
                                     </div>
                                     <div class="form-field-block _100"><label for="Password"
                                             class="text-label dark">Password*</label><input type="password"
-                                            class="form-input alter w-input" maxlength="100" name="Password"
-                                            data-name="Password" placeholder="Enter your password" id="Password"
+                                            class="form-input alter w-input" maxlength="100" name="password"
+                                            data-name="password" placeholder="Enter your password" id="Password"
                                             required>
                                     </div><input type="submit" value="Continue" data-wait="Please wait..."
                                         class="main-button w-button">
