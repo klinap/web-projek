@@ -42,8 +42,6 @@
         <li class="nav-item">
         <button type="button" class="nav-link btn btn-danger" onclick="logout()"><a href="login.php">Logout</a></button>
         </li>
-          
-        
       </ul>
     </div>
   </div>
