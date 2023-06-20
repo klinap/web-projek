@@ -44,7 +44,7 @@
 <body class="bg-dark"
     style="background-image: url(https://i.pinimg.com/564x/cf/ba/5d/cfba5d78a3f98961465009102f9f9664.jpg);">
     <!-- <img src="https://i.pinimg.com/564x/cf/ba/5d/cfba5d78a3f98961465009102f9f9664.jpg" alt="" style=""> -->
-<?php
+    <?php
 if(isset($_GET['pesan'])){
     if($_GET['pesan']=="gagal"){
         echo "<script> alert('Username dan Password tidak sesuai !')</script>";
