@@ -109,9 +109,10 @@
 <center><div class="p-3 mb-2 bg-secondary text-white" id="mediapartner">Media Partner</div>
     <h3>---Terima kasih kepada beberapa media partner yang telah bekerja sama dengan kami, sehingga acara kami dapat berlangsung dengan lancar---</h3></center>
     <br>
+    <div class="text-center">
       <img src="https://pbs.twimg.com/media/DHpKZgbUIAEy0Ci.jpg" width="50%" class/>
-    <br>
-
+    </div>
+      
   <!-- footer -->
 <div class="countainer py-2 border-footer bg-dark">
   <h7 class="text-center text-white">@copyright2023</h7>
