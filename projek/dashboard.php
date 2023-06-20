@@ -8,8 +8,13 @@
   <title>Dashboard</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.css">
-  <!-- CSS
-  <link rel="stylesheet" href="css/style.css"> -->
+  <!-- CSS-->
+  <link rel="stylesheet" href="css/style.css"> 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,15 +28,22 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#lineup">Line Up</a>
+          <a class="nav-link" href="#lineup">Line Up</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Jadwal</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Media Partner</a>
+          <a class="nav-link" href="#mediapartner">Media Partner</a>
         </li>
-        <button type="button " class="btn btn-danger">Log out</button>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pemesanan</a>
+        </li>
+        <li class="nav-item">
+        <button type="button" class="nav-link btn btn-danger" onclick="logout()"><a href="login.php">Logout</a></button>
+        </li>
+          
+        
       </ul>
     </div>
   </div>
@@ -46,7 +58,7 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/hi1.png" class="d-block w-100" alt="...">
+      <img src="img/hi1.png" class="d-block w-100"  alt="...">
     </div>
     <div class="carousel-item">
       <img src="img/vir1.png" class="d-block w-100" alt="...">
@@ -65,10 +77,10 @@
   </button>
 </div>
 
-<br><br>
-<!-- Deskripsi Line Up -->
-<center><h1>Line Up</h1>
-        <h3>Artis yang sangat kalian tunggu tunggu pada konser kali ini</h3></center>
+<br>
+  <!-- Deskripsi Line Up -->
+<center><div class="p-3 mb-2 bg-secondary text-white">Line Up</div>
+        <h3>Artis yang sangat kalian nantikan pada konser kali ini</h3></center>
 <div class="container">
     <div class="row" id="lineup">
       <div class="col-12 my-5 justify-content-center">
@@ -76,25 +88,34 @@
         </h1>
       </div>
       <div class="col-4">
-        <h4 class="fw-bold text-black">VIERRA</h4>
-        <img src="img/vir2.png" alt="profile" width="120px" class="rounded-circle img-profile">
+        <h4 class="fw-bold text-black text-center">VIERRA</h4>
+        <img src="img/vir2.png" alt="profile" width="100%" class="rounded-circle img-profile">
         <p>Vierratale merupakan sebuah grup musik pop rock asal Jakarta, Indonesia yang dibentuk pada tanggal 3 November 2008. Band ini beranggotakan 3 orang yaitu Kevin Aprilio, Widy Soediro Nichlany, dan Raka Cyril Damar. Genre musik Vierra dapat dikategorikan sebagai powerpop dan pop rock.</p>
       </div>
       <div class="col-4">
-        <h4 class="fw-bold text-black">YURA YUNITA</h4>
-        <img src="img/yura2.png" alt="profile" width="120px" class="rounded-circle img-profile">
+        <h4 class="fw-bold text-black text-center">YURA YUNITA</h4>
+        <img src="img/yura2.png" alt="profile" width="100%" class="rounded-circle img-profile">
         <p>Yunita Rachman atau yang lebih dikenal dengan Yura Yunita adalah seorang penyanyi-penulis lagu Indonesia berdarah Sunda.</p>
       </div>
       <div class="col-4">
-          <h4 class="fw-bold text-black">HIVI!</h4>
-          <img src="img/hi2.png" alt="profile" width="120px" class="rounded-circle img-profile">
+          <h4 class="fw-bold text-black text-center">HIVI!</h4>
+          <img src="img/hi2.png" alt="profile" width="100%" class="rounded-circle img-profile">
           <p>HIVI! merupakan sebuah grup musik pop Indonesia yang dibentuk di Jakarta pada tahun 2009. Grup musik ini beranggotakan Neida Aleida, Ilham Aditama, Febrian Nindyo Purbowiseso dan Ezra Mandira. Grup musik ini bergenre pop.</p>
         </div>
       </div>
     </div>
 
+  <!-- Media Partner -->
+<center><div class="p-3 mb-2 bg-secondary text-white" id="mediapartner">Media Partner</div>
+    <h3>---Terima kasih kepada beberapa media partner yang telah bekerja sama dengan kami, sehingga acara kami dapat berlangsung dengan lancar---</h3></center>
+    <br>
+      <img src="https://pbs.twimg.com/media/DHpKZgbUIAEy0Ci.jpg" width="50%" class/>
+    <br>
 
-<div style="height: 900px;" ></div>
+  <!-- footer -->
+<div class="countainer py-2 border-footer bg-dark">
+  <h7 class="text-center text-white">@copyright2023</h7>
+</div>
 
   <!-- Javascript Bootstrap -->
   <script src="js/bootstrap.bundle.js"></script>
