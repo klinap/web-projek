@@ -186,6 +186,8 @@ if(isset($_POST['simpan'])){ //untuk create
   <div class="col-12">
       <input type="submit" name="simpan" value="Simpan Data" class="btn btn-primary"/>
   </div>
+  <br/>
+  <a href="pemesanan.php?op=edit&id=<?php echo $id?>"><button type="button" class="btn btn-secondary">Buy Ticket</button></a>
     </form>
   </div>
 </div>
