@@ -37,7 +37,7 @@
           <a class="nav-link" href="#mediapartner">Media Partner</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pemesanan</a>
+          <a class="nav-link" href="pemesanan.php">Pemesanan</a>
         </li>
         <li class="nav-item">
         <button type="button" class="nav-link btn btn-danger" onclick="logout()"><a href="login.php">Logout</a></button>
