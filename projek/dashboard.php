@@ -31,7 +31,7 @@
           <a class="nav-link" href="#lineup">Line Up</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#jadwal">Jadwal</a>
+          <a class="nav-link" href="jadwal.php">Jadwal</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#mediapartner">Media Partner</a>
