@@ -113,7 +113,7 @@
       
   <!-- footer -->
 <div class="countainer py-2 border-footer bg-dark">
-  <h7 class="text-center text-white">@copyright2023</h7>
+  <h7 class="text-center text-white">copyright@2023</h7>
 </div>
 
   <!-- Javascript Bootstrap -->
