@@ -31,7 +31,7 @@
           <a class="nav-link" href="#lineup">Line Up</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Jadwal</a>
+          <a class="nav-link" href="#jadwal">Jadwal</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#mediapartner">Media Partner</a>
@@ -111,6 +111,9 @@
       <img src="https://pbs.twimg.com/media/DHpKZgbUIAEy0Ci.jpg" width="50%" class/>
     </div>
       
+  <!-- Jadwal -->
+  
+
   <!-- footer -->
 <div class="countainer py-2 border-footer bg-dark">
   <h7 class="text-center text-white">copyright@2023</h7>
