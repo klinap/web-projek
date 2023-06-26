@@ -31,13 +31,13 @@
           <a class="nav-link" href="#lineup">Line Up</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Jadwal</a>
+          <a class="nav-link" href="jadwal.php">Jadwal</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#mediapartner">Media Partner</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pemesanan</a>
+          <a class="nav-link" href="pemesanan.php">Pemesanan</a>
         </li>
         <li class="nav-item">
         <button type="button" class="nav-link btn btn-danger" onclick="logout()"><a href="login.php">Logout</a></button>
@@ -56,13 +56,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/hi1.png" class="d-block w-100"  alt="...">
+      <img src="img/hi1.png" class="d-block w-50 mx-auto"  alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img/vir1.png" class="d-block w-100" alt="...">
+      <img src="img/vir1.png" class="d-block w-50 mx-auto" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img/yura1.png" class="d-block w-100" alt="...">
+      <img src="img/yura1.png" class="d-block w-50 mx-auto" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -111,6 +111,9 @@
       <img src="https://pbs.twimg.com/media/DHpKZgbUIAEy0Ci.jpg" width="50%" class/>
     </div>
       
+  <!-- Jadwal -->
+  
+
   <!-- footer -->
 <div class="countainer py-2 border-footer bg-dark">
   <h7 class="text-center text-white">copyright@2023</h7>
