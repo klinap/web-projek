@@ -1,7 +1,7 @@
 <?php
 //perhitungan transaksi tiket konser
 $nama=$_POST['nama'];
-$tgl_pemesanan['tgl_pemesanan']
+$tgl_pemesanan['tgl_pemesanan'];
 $jenis_tiket=$_POST['jenis_tiket'];
 $jumlah_tiket=$_POST['jumlah_tiket'];
 $jam_perform=$_POST['jam_perform'];
