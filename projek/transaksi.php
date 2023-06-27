@@ -19,7 +19,7 @@ if ($jenis_tiket=="VIP") {
 }
 
 //menampilkan data transaksi dan pencetakan
-echo "<center></b></center>";
+echo "<center>KONSER SLAYYYY</b></center>";
                 echo "<hr/>";
                 echo "<table>
                 <tr>
