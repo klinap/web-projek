@@ -212,7 +212,9 @@ if(isset($_POST['simpan'])){ //untuk create
   <div class="col-12">
       <input type="submit" name="simpan" value="Simpan Data" class="btn btn-primary"/>
   </div>
-    </form>
+  <a href=""></a>
+  <!-- <a href="pemesanan.php?op=edit&id=<?php echo $id?>"><button type="button" class="btn btn-secondary">Transaksi</button></a> -->
+</form>
   </div>
 </div>
 
@@ -266,9 +268,9 @@ if(isset($_POST['simpan'])){ //untuk create
                         <td scope="row"><?php echo $hari_perform ?></td>
                         <td scope="row">
                         <a href="pemesanan.php?op=edit&id=<?php echo $id?>"><button type="button" class="btn btn-secondary">Edit</button></a>
-                            <span>
+                        <span>
                         <a href="pemesanan.php?op=delete&id=<?php echo $id?>" onclick="return confirm('Yakin mau hapus data?')"><button type="button" class="btn btn-danger">Delete</button></a>
-                </span>
+                        </span>
                       </td>
                     </tr>
                     <?php
