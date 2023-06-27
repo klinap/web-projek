@@ -9,14 +9,14 @@
 $host = "localhost";
 $user = "root";
 $pass = ""; //karena kita menggunakan xampp biasanya pass kosong
-$db   = "dbpesan";
+$db   = "dbtiketkonser";
 
 $koneksi = mysqli_connect($host, $user, $pass, $db); //untuk koneksi kita menggunakan fungsi dari mysql. lalu kita masukan parameter untuk melakukan koneksi ke database
 if(!$koneksi){ //cek koneksi
     die("Gagal Koneksi");
 }
 $nama           ="";
-$tanggal_lahir  ="";
+$tgl_pemesanan  ="";
 $jenis_tiket    ="";
 $harga_tiket    ="";
 $jumlah_tiket   ="";
@@ -49,7 +49,7 @@ if($op == 'edit'){
     $q1             = mysqli_query($koneksi,$sql1);
     $r1             = mysqli_fetch_array($q1);
     $nama           = $r1['nama'];
-    $tanggal_lahir  = $r1['tanggal_lahir'];
+    $tgl_pemesanan  = $r1['tgl_pemesanan'];
     $jenis_tiket    = $r1['jenis_tiket'];
     $harga_tiket    = $r1['harga_tiket'];
     $jumlah_tiket   = $r1['jumlah_tiket'];
@@ -66,7 +66,7 @@ if($op == 'edit'){
 
 if(isset($_POST['simpan'])){ //untuk create
     $nama           = $_POST['nama'];
-    $tanggal_lahir  = $_POST['tanggal_lahir'];
+    $tgl_pemesanan  = $_POST['tgl_pemesanan'];
     $jenis_tiket    = $_POST['jenis_tiket'];
     $harga_tiket    = $_POST['harga_tiket'];
     $jumlah_tiket   = $_POST['jumlah_tiket'];
@@ -75,9 +75,9 @@ if(isset($_POST['simpan'])){ //untuk create
     $jam_perform    = $_POST['jam_perform'];
     $hari_perform   = $_POST['hari_perform'];
 
-    if($nama && $tanggal_lahir && $jenis_tiket && $harga_tiket && $jumlah_tiket && $total_harga && $jam_perform && $hari_perform){
+    if($nama && $tgl_pemesanan && $jenis_tiket && $harga_tiket && $jumlah_tiket && $total_harga && $jam_perform && $hari_perform){
         if($op == 'edit'){ //untuk update
-            $sql1 = "update tb_pemesanan set nama = '$nama',tanggal_lahir='$tanggal_lahir',jenis_tiket='$jenis_tiket',harga_tiket='$harga_tiket',jumlah_tiket='$jumlah_tiket',total_harga='$total_harga',jam_perform='$jam_perform',hari_perform='$hari_perform'";
+            $sql1 = "update tb_pemesanan set nama = '$nama',tgl_pemesanan='$tgl_pemesanan',jenis_tiket='$jenis_tiket',harga_tiket='$harga_tiket',jumlah_tiket='$jumlah_tiket',total_harga='$total_harga',jam_perform='$jam_perform',hari_perform='$hari_perform'";
             $q1 = mysqli_query($koneksi,$sql1);
             if($q1){
                 $sukses = "Data berhasil diupdate";
@@ -85,7 +85,7 @@ if(isset($_POST['simpan'])){ //untuk create
                 $error = "Data gagal diupdate";
             }
         }else{ //untuk insert
-        $sql1 = "insert into tb_pemesanan (nama,tanggal_lahir,jenis_tiket,harga_tiket,jumlah_tiket,total_harga,jam_perform,hari_perform) values('$nama','$tanggal_lahir','$jenis_tiket','$harga_tiket','$jumlah_tiket','$total_harga','$jam_perform','$hari_perform')";
+        $sql1 = "insert into tb_pemesanan (nama,tgl_pemesanan,jenis_tiket,harga_tiket,jumlah_tiket,total_harga,jam_perform,hari_perform) values('$nama','$tgl_pemesanan','$jenis_tiket','$harga_tiket','$jumlah_tiket','$total_harga','$jam_perform','$hari_perform')";
         $q1 = mysqli_query($koneksi,$sql1);
         if($q1){
             $sukses = "Berhasil memasukkan data baru";
@@ -152,9 +152,9 @@ if(isset($_POST['simpan'])){ //untuk create
     </div>
   </div>
   <div class="mb-3 row">
-    <label for="tanggal_lahir" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+    <label for="tgl_pemesanan" class="col-sm-2 col-form-label">Tanggal Pemesanan</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="tanggal_lahir" name="tanggal_lahir"value="<?php echo $tanggal_lahir ?>">
+      <input type="date" class="form-control" id="tgl_pemesanan" name="tgl_pemesanan"value="<?php echo $tgl_pemesanan ?>">
     </div>
   </div>
   <div class="mb-3 row">
@@ -162,10 +162,9 @@ if(isset($_POST['simpan'])){ //untuk create
     <div class="col-sm-10">
       <select class="form-control" name="jenis_tiket" id="jenis_tiket">
           <option value="">- Pilih Jenis Tiket -</option>
-          <option value="diamond_tribune" <?php if($jenis_tiket == "diamond_tribune") echo "selected" ?>>Diamond Tribune</option>
-          <option value="platinum_tribune" <?php if($jenis_tiket == "platinum_tribune") echo "selected" ?>>Platinum Tribune</option>
-          <option value="gold_tribune" <?php if($jenis_tiket == "gold_tribune") echo "selected" ?>>Gold Tribune</option>
-          <option value="silver_tribune" <?php if($jenis_tiket == "silver_tribune") echo "selected" ?>>Silver Tribune</option>
+          <option value="VIP" <?php if($jenis_tiket == "VIP") echo "selected" ?>>VIP</option>
+          <option value="Festival A" <?php if($jenis_tiket == "Festival A") echo "selected" ?>>Festival A</option>
+          <option value="Festival B" <?php if($jenis_tiket == "Festival B") echo "selected" ?>>Festival B</option>
       </select>
     </div>
   </div>
@@ -191,19 +190,24 @@ if(isset($_POST['simpan'])){ //untuk create
     <label for="jam_perform" class="col-sm-2 col-form-label">Jam Perform</label>
     <div class="col-sm-10">
       <select class="form-control" name="jam_perform" id="jam_perform">
-          <option value="">- Pilih Jenis Tiket -</option>
-          <option value="jam_17" <?php if($jenis_tiket == "jam_17") echo "selected" ?>>Jam 17.00</option>
-          <option value="jam_20" <?php if($jenis_tiket == "jam_20") echo "selected" ?>>Jam 20.00</option>
-          <option value="jam_22" <?php if($jenis_tiket == "jam_22") echo "selected" ?>>Jam 22.00</option>
+          <option value="">- Pilih Jam Perform -</option>
+          <option value="17:00 WIB" <?php if($jenis_tiket == "17:00 WIB") echo "selected" ?>>17:00 WIB</option>
+          <option value="20:00 WIB" <?php if($jenis_tiket == "20:00 WIB") echo "selected" ?>>20:00 WIB</option>
+          <option value="22:00 WIB" <?php if($jenis_tiket == "22:00 WIB") echo "selected" ?>>22:00 WIB</option>
       </select>
     </div>
-
     </div>
-    <div class="mb-3 row">
+  <div class="mb-3 row">
     <label for="hari_perform" class="col-sm-2 col-form-label">Hari Perform</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="hari_perform" name="hari_perform"value="<?php echo $hari_perform ?>">
+      <select class="form-control" name="hari_perform" id="hari_perform">
+          <option value="">- Pilih Hari Perform -</option>
+          <option value="Jumat-Vierra" <?php if($jenis_tiket == "Jumat-Vierra") echo "selected" ?>>Jumat-Vierra</option>
+          <option value="Sabtu-Yura Yunita" <?php if($jenis_tiket == "Sabtu-Yura Yunita") echo "selected" ?>>Sabtu-Yura Yunita</option>
+          <option value="Minggu-Hivi!" <?php if($jenis_tiket == "Minggu-Hivi!") echo "selected" ?>>Minggu-Hivi!</option>
+      </select>
     </div>
+    
   </div>
   <div class="col-12">
       <input type="submit" name="simpan" value="Simpan Data" class="btn btn-primary"/>
@@ -212,7 +216,7 @@ if(isset($_POST['simpan'])){ //untuk create
   </div>
 </div>
 
-<!--untuk mengeluarkan data-->
+<!-- untuk mengeluarkan data -->
 <div class="card">
   <div class="card-header text-white bg-black">
     Lihat Data Anda Disini
@@ -241,7 +245,7 @@ if(isset($_POST['simpan'])){ //untuk create
                 while($r2 = mysqli_fetch_array($q2)){
                     $id             = $r2['id'];
                     $nama           = $r2['nama'];
-                    $tanggal_lahir  = $r2['tanggal_lahir'];
+                    $tgl_pemesanan  = $r2['tgl_pemesanan'];
                     $jenis_tiket    = $r2['jenis_tiket'];
                     $harga_tiket    = $r2['harga_tiket'];
                     $jumlah_tiket   = $r2['jumlah_tiket'];
@@ -253,7 +257,7 @@ if(isset($_POST['simpan'])){ //untuk create
                     <tr>
                         <th scope="row"><?php echo $urut++ ?></th>
                         <td scope="row"><?php echo $nama ?></td>
-                        <td scope="row"><?php echo $tanggal_lahir ?></td>
+                        <td scope="row"><?php echo $tgl_pemesanan ?></td>
                         <td scope="row"><?php echo $jenis_tiket ?></td>
                         <td scope="row"><?php echo $harga_tiket ?></td>
                         <td scope="row"><?php echo $jumlah_tiket ?></td>
@@ -262,8 +266,10 @@ if(isset($_POST['simpan'])){ //untuk create
                         <td scope="row"><?php echo $hari_perform ?></td>
                         <td scope="row">
                         <a href="pemesanan.php?op=edit&id=<?php echo $id?>"><button type="button" class="btn btn-secondary">Edit</button></a>
-                            <a href="pemesanan.php?op=delete&id=<?php echo $id?>" onclick="return confirm('Yakin mau hapus data?')"><button type="button" class="btn btn-danger">Delete</button></a>
-                        </td>
+                            <span>
+                        <a href="pemesanan.php?op=delete&id=<?php echo $id?>" onclick="return confirm('Yakin mau hapus data?')"><button type="button" class="btn btn-danger">Delete</button></a>
+                </span>
+                      </td>
                     </tr>
                     <?php
 
@@ -276,3 +282,5 @@ if(isset($_POST['simpan'])){ //untuk create
     </div>
 </body>
 </html>
+                        
+                    
