@@ -162,9 +162,9 @@ if(isset($_POST['simpan'])){ //untuk create
     <div class="col-sm-10">
       <select class="form-control" name="jenis_tiket" id="jenis_tiket">
           <option value="">- Pilih Jenis Tiket -</option>
-          <option value="diamond_tribune" <?php if($jenis_tiket == "diamond_tribune") echo "selected" ?>>Diamond Tribune </option>
-          <option value="platinum_tribune" <?php if($jenis_tiket == "platinum_tribune") echo "selected" ?>>Platinum Tribune</option>
-          <option value="gold_tribune" <?php if($jenis_tiket == "gold_tribune") echo "selected" ?>>Gold Tribune</option>
+          <option value="VIP" <?php if($jenis_tiket == "VIP") echo "selected" ?>>VIP</option>
+          <option value="Festival A" <?php if($jenis_tiket == "Festival A") echo "selected" ?>>Festival A</option>
+          <option value="Festival B" <?php if($jenis_tiket == "Festival B") echo "selected" ?>>Festival B</option>
       </select>
     </div>
   </div>
@@ -191,18 +191,23 @@ if(isset($_POST['simpan'])){ //untuk create
     <div class="col-sm-10">
       <select class="form-control" name="jam_perform" id="jam_perform">
           <option value="">- Pilih Jam Perform -</option>
-          <option value="jam_17.00" <?php if($jenis_tiket == "jam_17.00") echo "selected" ?>>Jam 17.00</option>
-          <option value="jam_20.00" <?php if($jenis_tiket == "jam_20.00") echo "selected" ?>>Jam 20.00</option>
-          <option value="jam_22.00" <?php if($jenis_tiket == "jam_22.00") echo "selected" ?>>Jam 22.00</option>
+          <option value="17:00 WIB" <?php if($jenis_tiket == "17:00 WIB") echo "selected" ?>>17:00 WIB</option>
+          <option value="20:00 WIB" <?php if($jenis_tiket == "20:00 WIB") echo "selected" ?>>20:00 WIB</option>
+          <option value="22:00 WIB" <?php if($jenis_tiket == "22:00 WIB") echo "selected" ?>>22:00 WIB</option>
       </select>
     </div>
-
     </div>
-    <div class="mb-3 row">
+  <div class="mb-3 row">
     <label for="hari_perform" class="col-sm-2 col-form-label">Hari Perform</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="hari_perform" name="hari_perform"value="<?php echo $hari_perform ?>">
+      <select class="form-control" name="hari_perform" id="hari_perform">
+          <option value="">- Pilih Hari Perform -</option>
+          <option value="Jumat-Vierra" <?php if($jenis_tiket == "Jumat-Vierra") echo "selected" ?>>Jumat-Vierra</option>
+          <option value="Sabtu-Yura Yunita" <?php if($jenis_tiket == "Sabtu-Yura Yunita") echo "selected" ?>>Sabtu-Yura Yunita</option>
+          <option value="Minggu-Hivi!" <?php if($jenis_tiket == "Minggu-Hivi!") echo "selected" ?>>Minggu-Hivi!</option>
+      </select>
     </div>
+    
   </div>
   <div class="col-12">
       <input type="submit" name="simpan" value="Simpan Data" class="btn btn-primary"/>
@@ -261,8 +266,10 @@ if(isset($_POST['simpan'])){ //untuk create
                         <td scope="row"><?php echo $hari_perform ?></td>
                         <td scope="row">
                         <a href="pemesanan.php?op=edit&id=<?php echo $id?>"><button type="button" class="btn btn-secondary">Edit</button></a>
-                            <a href="pemesanan.php?op=delete&id=<?php echo $id?>" onclick="return confirm('Yakin mau hapus data?')"><button type="button" class="btn btn-danger">Delete</button></a>
-                        </td>
+                            <span>
+                        <a href="pemesanan.php?op=delete&id=<?php echo $id?>" onclick="return confirm('Yakin mau hapus data?')"><button type="button" class="btn btn-danger">Delete</button></a>
+                </span>
+                      </td>
                     </tr>
                     <?php
 
@@ -275,3 +282,5 @@ if(isset($_POST['simpan'])){ //untuk create
     </div>
 </body>
 </html>
+                        
+                    
