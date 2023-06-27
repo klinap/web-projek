@@ -191,7 +191,7 @@ if(isset($_POST['simpan'])){ //untuk create
     <label for="jam_perform" class="col-sm-2 col-form-label">Jam Perform</label>
     <div class="col-sm-10">
       <select class="form-control" name="jam_perform" id="jam_perform">
-          <option value="">- Pilih Jenis Tiket -</option>
+          <option value="">- Pilih Jam Perform -</option>
           <option value="jam_17" <?php if($jenis_tiket == "jam_17") echo "selected" ?>>Jam 17.00</option>
           <option value="jam_20" <?php if($jenis_tiket == "jam_20") echo "selected" ?>>Jam 20.00</option>
           <option value="jam_22" <?php if($jenis_tiket == "jam_22") echo "selected" ?>>Jam 22.00</option>
