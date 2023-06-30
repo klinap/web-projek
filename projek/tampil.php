@@ -129,23 +129,15 @@ p {
 }
 
 /* Gaya khusus untuk layar dengan lebar maksimal 600px */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 100%) {
   .container {
     flex-direction: column;
   }
 }
-        .mx-auto { width:1000px }
+        .mx-auto { width:80% }
         .card {margin-top: 10px}
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-  <style>
-    .mx-auto.container {
-      width: 1000px;
-    }
-    .card {
-      margin-top: 10px;
-    }
-  </style>
 </head>
 <body>
     <br><br><br><br>

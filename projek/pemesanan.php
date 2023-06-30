@@ -52,7 +52,11 @@
           if(isset($_POST['simpan'])){ //untuk create
               $nama           = $_POST['nama'];
               $tgl_pemesanan  = $_POST['tgl_pemesanan'];
-              $jenis_tiket    = $_POST['jenis_tiket'];
+              $jenistkt    = $_POST['jenis_tiket'];
+              $pecah = explode(",", $jenistkt);
+              $jenis_tiket = trim($pecah['0']);
+              $harga = trim($pecah['1']);
+              $hargatkt = intval($harga);
               $jumlah_tiket   = $_POST['jumlah_tiket'];
               $jam_perform    = $_POST['jam_perform'];
               $jam_perform    = $_POST['jam_perform'];
@@ -69,7 +73,7 @@
                         $error = "Data gagal diupdate";
                     }
                 }else{ //untuk insert
-                  $sql1 = "insert into tb_pemesanan (nama,tgl_pemesanan,jenis_tiket,jumlah_tiket,jam_perform,hari_perform) values('$nama','$tgl_pemesanan','$jenis_tiket','$jumlah_tiket','$jam_perform','$hari_perform')";
+                  $sql1 = "insert into tb_pemesanan (nama,tgl_pemesanan,jenis_tiket,harga_tiket,jumlah_tiket,jam_perform,hari_perform) values('$nama','$tgl_pemesanan','$jenis_tiket','$hargatkt','$jumlah_tiket','$jam_perform','$hari_perform')";
                   $q1 = mysqli_query($koneksi,$sql1);
                     if($q1){
                     $sukses = "Berhasil memasukkan data baru";
@@ -125,14 +129,14 @@
     }
 
     /* Gaya khusus untuk layar dengan lebar maksimal 600px */
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 100px) {
       .container {
         flex-direction: column;
       }
     }
 
     .mx-auto {
-      width: 1000px
+      width: 80%;
     }
 
     .card {
@@ -140,15 +144,6 @@
     }
   </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-  <style>
-    .mx-auto.container {
-      width: 1000px;
-    }
-
-    .card {
-      margin-top: 10px;
-    }
-  </style>
 </head>
 
 <body>
@@ -199,9 +194,9 @@
             <div class="col-sm-10">
               <select class="form-control" name="jenis_tiket" id="jenis_tiket">
                 <option value="">- Pilih Jenis Tiket -</option>
-                <option value="VIP">VIP</option>
-                <option value="Festival A">Festival A</option>
-                <option value="Festival B">Festival B</option>
+                <option value="VIP, 500000">VIP</option>
+                <option value="Reguler, 250000">Reguler</option>
+                <option value="Standar, 100000">Standar</option>
               </select>
             </div>
           </div>
@@ -238,7 +233,7 @@
           </div>
           <a href="tampil.php">Lihat Data Anda</a>
           <br />
-          <a href="cetaktransaksi.php" class="btn btn-primary">Transaksi</a>
+          <a href="transaksi.php" class="btn btn-primary">Transaksi</a>
         </form>
       </div>
       </form>

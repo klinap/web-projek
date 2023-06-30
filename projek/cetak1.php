@@ -14,8 +14,8 @@
         font-size: 14px;
       }
 
-      h1 {
-        color: #333;
+      th {
+        color: #00000;
         font-size: 24px;
         margin-bottom: 20px;
       }
@@ -49,6 +49,7 @@
       <th scope="col">Nama</th>
       <th scope="col">Tanggal Pemesanan</th>
       <th scope="col">Jenis Tiket</th>
+      <th scope="col">Harga Tiket</th>
       <th scope="col">Jumlah Tiket</th>
       <th scope="col">Jam Perform</th>
       <th scope="col">Hari Perform</th>
@@ -56,10 +57,9 @@
     </tr>
     <?php 
     $no=1;
-    $sql = mysqli_query($koneksi,"SELECT * FROM tb_pemesanan");
+    $sql = mysqli_query($koneksi,"SELECT * FROM tb_pemesanan order by id desc limit 1");  
     while($data = mysqli_fetch_array($sql)){
     ?>
-
     <tr>
       <td><?php echo $no++; ?></td>
       <td><?php echo $data['nama']; ?></td>
@@ -69,7 +69,7 @@
       <td><?php echo $data['jumlah_tiket']; ?></td>
       <td><?php echo $data['hari_perform']; ?></td>
       <td><?php echo $data['jam_perform']; ?></td>
-      <td><?php echo $data['total_harga']; ?></td>
+      <td><?php echo $data['harga_tiket']* $data['jumlah_tiket'];?></td>
     </tr>
     <?php 
     }

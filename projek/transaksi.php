@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -83,7 +82,7 @@
                         if (!$koneksi) {
                         die("Koneksi Gagal").mysqli_connect_error();
                           }
-                        $sql = "SELECT * FROM tb_pemesanan";
+                        $sql = "SELECT * FROM tb_pemesanan order by id asc";
                         $result = mysqli_query($koneksi, $sql);
                       ?>
                             <!DOCTYPE html>
@@ -104,20 +103,16 @@
                                         <?php
               $nama = $row['nama'];
               $tgl_pemesanan = $row['tgl_pemesanan'];
-              $jenis_tiket = $row['jenis_tiket'];
+              $jenistkt = $row['jenis_tiket'];
+              $hargatkt = $row['harga_tiket'];
+              $simpanharga = intval($hargatkt);
               $jumlah_tiket = $row['jumlah_tiket'];
               $jam_perform = $row['jam_perform'];
               $hari_perform = $row['hari_perform'];
-              if ($jenis_tiket == "VIP") {
-                  $harga_tiket = 1300000;
-                  $total_harga = ($harga_tiket * $jumlah_tiket);
-              } else if ($jenis_tiket == "Festival A") {
-                  $harga_tiket = 500000;
-                  $total_harga = ($harga_tiket * $jumlah_tiket);
-              } else {
-                  $harga_tiket = 350000;
-                  $total_harga = ($harga_tiket * $jumlah_tiket);
-              }
+              $total= $simpanharga*$jumlah_tiket;
+              
+              
+              
             ?>
                                         <?php endwhile; ?>
                                         <table>
@@ -134,7 +129,12 @@
                                             <tr>
                                                 <th>Jenis Tiket</th>
                                                 <td>:</td>
-                                                <td><?php echo $jenis_tiket; ?></td>
+                                                <td><?php echo $jenistkt; ?></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Harga Tiket</th>
+                                                <td>:</td>
+                                                <td><?php echo $hargatkt ?></td>
                                             </tr>
                                             <tr>
                                                 <th>Jumlah Tiket</th>
@@ -151,10 +151,11 @@
                                                 <td>:</td>
                                                 <td><?php echo $hari_perform; ?></td>
                                             </tr>
+                                        
                                             <tr>
                                                 <th>Total Harga</th>
                                                 <td>:</td>
-                                                <td><?php echo "Rp ".$total_harga; ?></td>
+                                                <td><?php echo "Rp ".$total; ?></td>
                                             </tr>
                                         </table>
                                         <br>
@@ -168,7 +169,7 @@
 
                             </tbody>
                     </table>
-                    <a href="cetak1.php?op=edit&id=<?php echo $id?>"><button type="button"
+                    <a href="cetak2.php?op=edit&id=<?php echo $id?>"><button type="button"
                             class="btn btn-secondary">Cetak</button></a>
                 </div>
             </div>
