@@ -37,13 +37,16 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav ">
         <li class="nav-item">
-          <a class="nav-link" href="#lineup">Line Up</a>
+          <a class="nav-link" href="dashboard.php#lineup">Line Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard.php#venue">Venue</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="jadwal.php">Jadwal</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#mediapartner">Media Partner</a>
+          <a class="nav-link" href="dashboard.php#mediapartner">Media Partner</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="pemesanan.php">Pemesanan</a>
@@ -106,7 +109,7 @@
         </tbody>
     </table>
     <br>
-    <h2>Untuk Pemesanan Tiket Silahkan ke Menu Pemesanan Tiket</h2>
+    <h2>Untuk Pemesanan Tiket Silahkan ke Menu Pemesanan Tiket atau klik link <a href="pemesanan.php">pesan tiket</a></h2>
 
      <!-- Javascript Bootstrap -->
   <script src="js/bootstrap.bundle.js"></script>
