@@ -160,7 +160,7 @@
                     <p class="card-text">Daniel Baskara Putra adalah penyanyi dan penulis lagu asal Indonesia. Ia adalah vokalis grup musik .Feast namun juga merilis musik solo dengan moniker Hindia.</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Pembaruan terakhit 3 menit lalu</small>
+                    <small class="text-muted">Pembaruan terakhir 3 menit lalu</small>
                 </div>
             </div>
             <div class="card">
@@ -197,7 +197,7 @@
                     <p class="card-text">Rizki Rahmahadian Pamungkas, S.Ds., yang lebih dikenal dengan nama panggung Pamungkas, adalah seorang penyanyi, produser rekaman, penulis lagu, dan aktor berkebangsaan Indonesia.</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Pembaruan terakhit 3 menit lalu</small>
+                    <small class="text-muted">Pembaruan terakhir 3 menit lalu</small>
                 </div>
             </div>
             <div class="card">
