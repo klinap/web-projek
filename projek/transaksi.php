@@ -1,12 +1,4 @@
 <?php
-<<<<<<< HEAD
-include "koneksi.php"; //panggil nama file koneksi
-//read data dari tbpemesanan
-$sql = "SELECT * FROM pemesanan";
-$query = mysqli_query($konek, $sql);
-$nomor = 1; // Inisialisasi nomor awal
-while ($data = mysqli_fetch_array($query)) 
-=======
 //perhitungan transaksi tiket konser
 $nama=$_POST['nama'];
 $tgl_pemesanan['tgl_pemesanan'];
@@ -14,7 +6,6 @@ $jenis_tiket=$_POST['jenis_tiket'];
 $jumlah_tiket=$_POST['jumlah_tiket'];
 $jam_perform=$_POST['jam_perform'];
 $hari_perform+$_['hari_perform'];
->>>>>>> 3d739cb1c060ddad0a90d616cb055cc4513ddab6
 
 //perhitungan transaksi tiket konser
 $nama = $_POST['nama'];

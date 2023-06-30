@@ -42,8 +42,7 @@
 </head>
 
 <body class="bg-dark"
-    style="background-image: url(https://i.pinimg.com/564x/cf/ba/5d/cfba5d78a3f98961465009102f9f9664.jpg);">
-    <!-- <img src="https://i.pinimg.com/564x/cf/ba/5d/cfba5d78a3f98961465009102f9f9664.jpg" alt="" style=""> -->
+style="background-image: url('img/bg.png'); background-size: cover; background-position: center; justify-content: center;">
     <?php
 if(isset($_GET['pesan'])){
     if($_GET['pesan']=="gagal"){
@@ -78,7 +77,7 @@ if(isset($_GET['pesan'])){
                                             class="text-label dark">Password*</label><input type="password"
                                             class="form-input alter w-input" maxlength="256" name="password"
                                             placeholder="Enter your password" id="password" required>
-                                    </div><input type="submit" value="Continue" class="main-button w-button">
+                                    </div><input type="submit" value="Continue" class="main-button w-button bg-dark">
                                 </form>
                             </div>
                         </div>
