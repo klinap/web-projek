@@ -42,7 +42,7 @@
 </head>
 
 <body class="bg-dark"
-style="background-image: url('img/bg.png'); background-size: cover; background-position: center; justify-content: center;">
+    style="background-image: url('img/bg.png'); background-size: cover; background-position: center; justify-content: center;">
     <?php
 if(isset($_GET['pesan'])){
     if($_GET['pesan']=="gagal"){
