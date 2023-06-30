@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+
+
 
 <?php //pertama kita membuat untuk melakukan koneksinya
 $host = "localhost";
@@ -11,16 +17,15 @@ $user = "root";
 $pass = ""; //karena kita menggunakan xampp biasanya pass kosong
 $db   = "dbtiketkonser";
 
-$koneksi = mysqli_connect($host, $user, $pass, $db); //untuk koneksi kita menggunakan fungsi dari mysql. lalu kita masukan parameter untuk melakukan koneksi ke database
-if(!$koneksi){ //cek koneksi
-    die("Gagal Koneksi");
+$koneksi=mysqli_connect('localhost','root','','dbtiketkonser');
+if(!$koneksi)
+{
+        die("Koneksi Gagal").mysqli_connect_error();
 }
 $nama           ="";
 $tgl_pemesanan  ="";
 $jenis_tiket    ="";
-$harga_tiket    ="";
 $jumlah_tiket   ="";
-$total_harga    ="";
 $jam_perform    ="";
 $hari_perform   ="";
 $sukses         ="";
@@ -51,26 +56,20 @@ if($op == 'edit'){
     $nama           = $r1['nama'];
     $tgl_pemesanan  = $r1['tgl_pemesanan'];
     $jenis_tiket    = $r1['jenis_tiket'];
-    $harga_tiket    = $r1['harga_tiket'];
     $jumlah_tiket   = $r1['jumlah_tiket'];
-    $total_harga    = $r1['total_harga'];
     $jam_perform    = $r1['jam_perform'];
     $hari_perform    = $r1['hari_perform'];
 
     if($nama == ''){
         $error = "Data tidak ditemukan";
     }
-
-
 }
 
 if(isset($_POST['simpan'])){ //untuk create
     $nama           = $_POST['nama'];
     $tgl_pemesanan  = $_POST['tgl_pemesanan'];
     $jenis_tiket    = $_POST['jenis_tiket'];
-    $harga_tiket    = $_POST['harga_tiket'];
     $jumlah_tiket   = $_POST['jumlah_tiket'];
-    $total_harga    = $_POST['total_harga'];
     $jam_perform    = $_POST['jam_perform'];
     $jam_perform    = $_POST['jam_perform'];
     $hari_perform   = $_POST['hari_perform'];
@@ -130,7 +129,7 @@ if(isset($_POST['simpan'])){ //untuk create
             <div class="alert alert-danger" role="alert">
   <?php echo $error ?>
 </div>
-            <?php
+        <?php
             header("refresh:5;url=pemesanan.php"); //5 detik
           }
         ?>
@@ -169,21 +168,9 @@ if(isset($_POST['simpan'])){ //untuk create
     </div>
   </div>
   <div class="mb-3 row">
-    <label for="harga_tiket" class="col-sm-2 col-form-label">Harga Tiket</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="harga_tiket" name="harga_tiket"value="<?php echo $harga_tiket ?>">
-    </div>
-  </div>
-  <div class="mb-3 row">
     <label for="jumlah_tiket" class="col-sm-2 col-form-label">Jumlah Tiket</label>
     <div class="col-sm-10">
       <input type="text" class="form-control" id="jumlah_tiket" name="jumlah_tiket"value="<?php echo $jumlah_tiket ?>">
-    </div>
-  </div>
-  <div class="mb-3 row">
-    <label for="total_harga" class="col-sm-2 col-form-label">Total Harga</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="total_harga" name="total_harga"value="<?php echo $total_harga ?>">
     </div>
     </div>
   <div class="mb-3 row">
@@ -212,7 +199,7 @@ if(isset($_POST['simpan'])){ //untuk create
   <div class="col-12">
       <input type="submit" name="simpan" value="Simpan Data" class="btn btn-primary"/>
   </div>
-  <a href=""></a>
+  <a href="transaksi.php">Transaksi</a>
   <!-- <a href="pemesanan.php?op=edit&id=<?php echo $id?>"><button type="button" class="btn btn-secondary">Transaksi</button></a> -->
 </form>
   </div>
@@ -231,9 +218,7 @@ if(isset($_POST['simpan'])){ //untuk create
                 <th scope="col">Nama</th>
                 <th scope="col">Tanggal Lahir</th>
                 <th scope="col">jenis Tiket</th>
-                <th scope="col">Harga Tiket</th>
                 <th scope="col">Jumlah Tiket</th>
-                <th scope="col">Total Harga</th>
                 <th scope="col">Jam Perform</th>
                 <th scope="col">Hari Perform</th>
                 <th scope="col">Aksi</th>
@@ -249,9 +234,7 @@ if(isset($_POST['simpan'])){ //untuk create
                     $nama           = $r2['nama'];
                     $tgl_pemesanan  = $r2['tgl_pemesanan'];
                     $jenis_tiket    = $r2['jenis_tiket'];
-                    $harga_tiket    = $r2['harga_tiket'];
                     $jumlah_tiket   = $r2['jumlah_tiket'];
-                    $total_harga    = $r2['total_harga'];
                     $jam_perform    = $r2['jam_perform'];
                     $hari_perform   = $r2['hari_perform'];
 
@@ -261,9 +244,7 @@ if(isset($_POST['simpan'])){ //untuk create
                         <td scope="row"><?php echo $nama ?></td>
                         <td scope="row"><?php echo $tgl_pemesanan ?></td>
                         <td scope="row"><?php echo $jenis_tiket ?></td>
-                        <td scope="row"><?php echo $harga_tiket ?></td>
                         <td scope="row"><?php echo $jumlah_tiket ?></td>
-                        <td scope="row"><?php echo $total_harga ?></td>
                         <td scope="row"><?php echo $jam_perform ?></td>
                         <td scope="row"><?php echo $hari_perform ?></td>
                         <td scope="row">
