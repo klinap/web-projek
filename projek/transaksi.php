@@ -1,16 +1,5 @@
-<<<<<<< HEAD
-<?php
-//perhitungan transaksi tiket konser
-$nama=$_POST['nama'];
-$tgl_pemesanan['tgl_pemesanan'];
-$jenis_tiket=$_POST['jenis_tiket'];
-$jumlah_tiket=$_POST['jumlah_tiket'];
-$jam_perform=$_POST['jam_perform'];
-$hari_perform+$_['hari_perform'];
-=======
 <!DOCTYPE html>
 <html lang="en">
->>>>>>> 2b9d76ade15787476c3110ba2e2260b9c4257ab7
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
