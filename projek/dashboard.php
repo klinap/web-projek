@@ -150,7 +150,7 @@
                     <p class="card-text">Fourtwnty adalah grup musik indie asal Indonesia yang beranggotakan Ari Lesmana, Nuwi, Roots, Andi Armant, Prandha Ridho, dan Ryan Maulana. Grup musik ini turut dibentuk oleh Roby Satria yang juga merupakan personel Geisha.</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Pembaruan terkahir 3 menit lalu </small>
+                    <small class="text-muted">Pembaruan terkahir 9 Hari lalu </small>
                 </div>
             </div>
             <div class="card">
@@ -160,7 +160,7 @@
                     <p class="card-text">Daniel Baskara Putra adalah penyanyi dan penulis lagu asal Indonesia. Ia adalah vokalis grup musik .Feast namun juga merilis musik solo dengan moniker Hindia.</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Pembaruan terakhir 3 menit lalu</small>
+                    <small class="text-muted">Pembaruan terakhir 9 Hari lalu</small>
                 </div>
             </div>
             <div class="card">
@@ -170,7 +170,7 @@
                     <p class="card-text">Sheila on 7 adalah grup musik pop rock Indonesia asal Yogyakarta. Didirikan oleh sekelompok pelajar SMA pada 6 Mei 1996, grup musik ini sekarang beranggotakan Akhdiyat Duta Modjo, Eross Candra dan Adam Muhammad Subarkah.</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Pembaruan terakhir 3 menit lalu </small>
+                    <small class="text-muted">Pembaruan terakhir 9 Hari lalu </small>
                 </div>
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <p class="card-text">Fiersa Besari adalah Penulis, YouTuber, dan Musisi asal Indonesia. Sebagai penulis, Fiersa telah menghasilkan enam novel. Ia juga terlibat sebagai salah satu pendiri Komunitas Pecandu Buku. Ia pun aktif sebagai YouTuber pendakian. Episode-episode YouTube terkenal miliknya adalah "Sebuah Jurnal".</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Pembaruan terkahir 3 menit lalu </small>
+                    <small class="text-muted">Pembaruan terkahir 11 Hari lalu </small>
                 </div>
             </div>
             <div class="card">
@@ -197,7 +197,7 @@
                     <p class="card-text">Rizki Rahmahadian Pamungkas, S.Ds., yang lebih dikenal dengan nama panggung Pamungkas, adalah seorang penyanyi, produser rekaman, penulis lagu, dan aktor berkebangsaan Indonesia.</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Pembaruan terakhir 3 menit lalu</small>
+                    <small class="text-muted">Pembaruan terakhir 10 Hari lalu</small>
                 </div>
             </div>
             <div class="card">
@@ -207,7 +207,7 @@
                     <p class="card-text">Muhammad Tulus, S.Ars adalah penyanyi-penulis lagu berkebangsaan Indonesia. Tulus memulai karier profesionalnya sejak tahun 2011 melalui label rekaman independen TulusCompany yang didirikannya. Hampir semua karya musik yang dirilisnya adalah hasil karya ciptanya sendiri.</p>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted">Pembaruan terakhir 3 menit lalu </small>
+                    <small class="text-muted">Pembaruan terakhir 10 Hari lalu </small>
                 </div>
             </div>
         </div>
@@ -220,7 +220,7 @@
   <center>
     <div class="p-3 mb-2 bg-secondary text-white"><h2>VENUE</h2></div>
   </center>
-    <img src="img/venue.jpg" width="60%" />
+    <img src="img/venue.png" width="60%" />
     <div class="kolom">
       <p class="deskripsi">Booking Tiket mu Sekarang!!!</p>
       <p>Syarat dan Ketentuan:</p>
