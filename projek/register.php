@@ -43,8 +43,9 @@
     </script>
 </head>
 
-<body class="bg-dark" style="background-image: url(https://i.pinimg.com/564x/cf/ba/5d/cfba5d78a3f98961465009102f9f9664.jpg);">
-<?php
+<body class="bg-dark" 
+style="background-image: url('img/bg.png'); background-size: cover; background-position: center; justify-content: center;">
+    <?php
 if(isset($_GET['pesan'])){
     if($_GET['pesan']=="Terdaftar"){
         echo "<script> alert('Berhasil mendaftar, silahkan kembali ke halaman Login!')</script>";
@@ -62,14 +63,16 @@ if(isset($_GET['pesan'])){
                     <div class="sign-main-wrapper">
                         <div class="signup-form-main-block">
                             <div class="signup-form-block w-form">
-                            <center><h4>Register</h4></center>
-                            <hr>
-                                <form id="email-form" name="email-form" data-name="Email Form" method="POST" action ="prosesregist.php"
-                                    class="signup-form" aria-label="Email Form">
-                                    <div class="form-field-block _100"><label for="email"
-                                            class="text-label dark">Nama Lengkap*</label><input type="text"
-                                            class="form-input alter w-input" maxlength="60" name="namaLengkap"
-                                            placeholder="Enter your username" required>
+                                <center>
+                                    <h4>Register</h4>
+                                </center>
+                                <hr>
+                                <form id="email-form" name="email-form" data-name="Email Form" method="POST"
+                                    action="prosesregist.php" class="signup-form" aria-label="Email Form">
+                                    <div class="form-field-block _100"><label for="email" class="text-label dark">Nama
+                                            Lengkap*</label><input type="text" class="form-input alter w-input"
+                                            maxlength="60" name="namaLengkap" placeholder="Enter your username"
+                                            required>
                                     </div>
                                     <div class="form-field-block _100"><label for="email"
                                             class="text-label dark">Username*</label><input type="text"
@@ -82,7 +85,7 @@ if(isset($_GET['pesan'])){
                                             data-name="password" placeholder="Enter your password" id="Password"
                                             required>
                                     </div><input type="submit" value="Continue" data-wait="Please wait..."
-                                        class="main-button w-button">
+                                        class="main-button w-button bg-dark">
                                 </form>
                             </div>
                         </div>
