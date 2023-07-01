@@ -207,7 +207,7 @@ p {
                         <td scope="row"><?php echo $jam_perform ?></td>
                         <td scope="row"><?php echo $hari_perform ?></td>
                         <td scope="row">
-                        <a href="coba.php?op=edit&id=<?php echo $id?>"><button type="button" class="btn btn-secondary">Edit</button></a>
+                        <a href="pemesanan.php?op=edit&id=<?php echo $id?>"><button type="button" class="btn btn-secondary">Edit</button></a>
                         <span>
                         <a href="tampil.php?op=delete&id=<?php echo $id?>" onclick="return confirm('Yakin mau hapus data?')"><button type="button" class="btn btn-danger">Delete</button></a>
                         </span>
