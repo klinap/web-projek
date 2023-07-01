@@ -107,11 +107,7 @@ include 'koneksi.php'
     }
     ?>
     </table>
-
-    <!-- Tambahkan konten tambahan yang diinginkan -->
-
     <script>
-        // (Opsional) Anda dapat menambahkan JavaScript untuk mengubah atau memanipulasi konten sebelum mencetak
         window.onload = function () {
             window.print(); // Mencetak dokumen saat halaman dimuat
         };

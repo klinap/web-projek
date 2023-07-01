@@ -85,18 +85,12 @@
                   $error="Silahkan input semua data";
                   }
 
-            if (isset($_POST['nama'])) {
-                $nama = $_POST['nama'];
-              } else {
-                $nama = ""; // Atau berikan nilai default lainnya
-              }
             }
 ?>
 
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
@@ -108,49 +102,35 @@
   <style>
     .container {
       width: 80vw;
-      /* lebar 80% dari lebar viewport */
       height: 50vh;
-      /* tinggi 50% dari tinggi viewport */
     }
-
     h1 {
       font-size: 3rem;
-      /* ukuran font 3 kali dari ukuran font elemen root */
     }
-
     p {
       font-size: 1.2em;
-      /* ukuran font 1.2 kali dari ukuran font elemen saat ini */
     }
-
     .container {
       display: flex;
       flex-direction: row;
     }
-
-    /* Gaya khusus untuk layar dengan lebar maksimal 600px */
     @media screen and (max-width: 100px) {
       .container {
         flex-direction: column;
       }
     }
-
     .mx-auto {
       width: 80%;
     }
-
     .card {
       margin-top: 10px
     }
   </style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
 </head>
-
 <body>
   <br><br><br><br>
   <div class="mx-auto">
-    <!--kita berikan class yaitu max auto dia akan membuat sebuah div-->
-    <!--untuk memasukan data-->
     <div class="card">
       <div class="card-header">
         Lakukan Pemesanan Tiket Konser Disini
@@ -162,7 +142,7 @@
         <?php echo $error ?>
       </div>
       <?php
-                  header("refresh:50;url=coba.php"); //5 detik
+                  header("refresh:50;url=pemesanan.php"); //5 detik
                   }
                 ?>
       <?php
@@ -172,7 +152,7 @@
         <?php echo $sukses ?>
       </div>
       <?php
-                    header("refresh:50;url=coba.php"); //5 detik
+                    header("refresh:50;url=pemesanan.php"); //5 detik
                   }
                   ?>
       <div class="card-body">

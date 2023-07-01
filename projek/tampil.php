@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-<style>
-        .mx-auto { width:1000px }
-        .card {margin-top: 10px}
-    </style>
-</head>
-<?php //pertama kita membuat untuk melakukan koneksinya
+<?php 
 $host = "localhost";
 $user = "root";
-$pass = ""; //karena kita menggunakan xampp biasanya pass kosong
+$pass = ""; 
 $db   = "dbtiketkonser";
 
 $koneksi=mysqli_connect('localhost','root','','dbtiketkonser');
@@ -110,25 +98,21 @@ if(isset($_POST['simpan'])){ //untuk create
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <style>
       .container {
-  width: 80vw; /* lebar 80% dari lebar viewport */
-  height: 50vh; /* tinggi 50% dari tinggi viewport */
+  width: 80vw; 
+  height: 50vh;
 }
 
 h1 {
-  font-size: 3rem; /* ukuran font 3 kali dari ukuran font elemen root */
+  font-size: 3rem;
 }
 
 p {
-  font-size: 1.2em; /* ukuran font 1.2 kali dari ukuran font elemen saat ini */
+  font-size: 1.2em; 
 }
-
-/* Gaya umum untuk semua ukuran layar */
 .container {
   display: flex;
   flex-direction: row;
 }
-
-/* Gaya khusus untuk layar dengan lebar maksimal 600px */
 @media screen and (max-width: 100%) {
   .container {
     flex-direction: column;
@@ -141,7 +125,7 @@ p {
 </head>
 <body>
     <br><br><br><br>
-    <div class="mx-auto"> <!--kita berikan class yaitu max auto dia akan membuat sebuah div-->
+    <div class="mx-auto"> 
       <?php
         if($error){
             ?>
