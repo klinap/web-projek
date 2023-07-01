@@ -230,8 +230,9 @@
           </div>
           <div class="col-12">
             <input type="submit" name="simpan" value="simpan" class="btn btn-primary" />
+            <div class="col-12 d-flex justify-content-end">
+            <a href="tampil.php" target="_blank"><button type="button" class="btn btn-secondary">Lihat Data Anda</button></a>
           </div>
-          <a href="tampil.php">Lihat Data Anda</a>
           <br />
           <a href="transaksi.php" class="btn btn-primary">Transaksi</a>
         </form>
